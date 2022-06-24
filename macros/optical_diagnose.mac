@@ -1,0 +1,11 @@
+/gps/particle opticalphoton
+
+/gps/pos/centre 0 0 0 cm
+/gps/pos/type Point
+/gps/ang/type iso
+
+# /gps/direction 0 0.6 0.4
+/gps/polarization 1 0 0
+
+/gps/ene/type Mono
+/gps/ene/mono 3 eV

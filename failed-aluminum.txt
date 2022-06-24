@@ -1,0 +1,115 @@
+### Run 1 starts.
+G4WT1 > ### Run 1 starts on worker thread 1.
+G4WT0 > ### Run 1 starts on worker thread 0.
+G4WT1 >   G4ParticleChange::CheckIt    : the velocity is greater than c_light  !!
+G4WT0 > Thread-local run terminated.
+G4WT1 >   Velocity:  2.94179
+G4WT1 > opticalphoton E=3e-06 pos=-0.0105, 0.000304477, -0.00273335
+G4WT0 > Run Summary
+G4WT1 >       -----------------------------------------------
+G4WT0 >   Number of events processed : 0
+G4WT1 >         G4ParticleChange Information  
+G4WT0 >   User=0.000000s Real=0.000003s Sys=0.000000s [Cpu=0.0%]
+G4WT1 >       -----------------------------------------------
+G4WT1 >         # of 2ndaries       :                    0
+G4WT1 >       -----------------------------------------------
+G4WT1 >         Energy Deposit (MeV):                    0
+G4WT1 >         Non-ionizing Energy Deposit (MeV):                    0
+G4WT1 >         Track Status        :                Alive
+G4WT1 >         True Path Length (mm) :                    0
+G4WT1 >         Stepping Control      :                    0
+G4WT1 >     First Step In the voulme  : 
+G4WT1 >         Mass (GeV)   :                    0
+G4WT1 >         Charge (eplus)   :                    0
+G4WT1 >         MagneticMoment   :                    0
+G4WT1 >                 :  =                    0*[e hbar]/[2 m]
+G4WT1 >         Position - x (mm)   :                -10.5
+G4WT1 >         Position - y (mm)   :                0.304
+G4WT1 >         Position - z (mm)   :                -2.73
+G4WT1 >         Time (ns)           :                0.139
+G4WT1 >         Proper Time (ns)    :                    0
+G4WT1 >         Momentum Direct - x :                0.983
+G4WT1 >         Momentum Direct - y :               0.0204
+G4WT1 >         Momentum Direct - z :               -0.183
+G4WT1 >         Kinetic Energy (MeV):                3e-06
+G4WT1 >         Velocity  (/c):                 2.94
+G4WT1 >         Polarization - x    :               -0.184
+G4WT1 >         Polarization - y    :                0.109
+G4WT1 >         Polarization - z    :               -0.977
+G4WT1 >         Touchable (pointer) :       0x7f9df0cc3a10
+G4WT1 > 
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : TRACK003
+      issued by : G4ParticleChange::CheckIt()
+momentum, energy, and/or time was illegal
+*** Event Must Be Aborted ***
+G4WT1 > G4Track (0x7f9df0cc3530) - track ID = 1, parent ID = 0
+G4WT1 >  Particle type : opticalphoton - creator process : not available
+G4WT1 >  Kinetic energy : 3 eV  - Momentum direction : (0.982861,0.0204087,-0.183213)
+G4WT1 >  Step length : 0 fm  - total energy deposit : 0 eV 
+G4WT1 >  Pre-step point : (-10.5,0.304477,-2.73335) - Physical volume : al_phys (aluminum)
+G4WT1 >  - defined by : Transportation - step status : 1
+G4WT1 >  Post-step point : (-10.5,0.304477,-2.73335) - Physical volume : al_phys (aluminum)
+G4WT1 >  - defined by : Transportation - step status : 1
+G4WT1 >  *** Note: Step information might not be properly updated.
+G4WT1 > 
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+G4WT1 >   G4ParticleChange::CheckIt    : the velocity is greater than c_light  !!
+G4WT1 >   Velocity:  2.94179
+G4WT1 > opticalphoton E=3e-06 pos=-0.0105, 0.000304477, -0.00273335
+G4WT1 >       -----------------------------------------------
+G4WT1 >         G4ParticleChange Information  
+G4WT1 >       -----------------------------------------------
+G4WT1 >         # of 2ndaries       :                    0
+G4WT1 >       -----------------------------------------------
+G4WT1 >         Energy Deposit (MeV):                    0
+G4WT1 >         Non-ionizing Energy Deposit (MeV):                    0
+G4WT1 >         Track Status        :                Alive
+G4WT1 >         True Path Length (mm) :                    0
+G4WT1 >         Stepping Control      :                    0
+G4WT1 >     First Step In the voulme  : 
+G4WT1 >     Last Step In the voulme  : 
+G4WT1 >         Mass (GeV)   :                    0
+G4WT1 >         Charge (eplus)   :                    0
+G4WT1 >         MagneticMoment   :                    0
+G4WT1 >                 :  =                    0*[e hbar]/[2 m]
+G4WT1 >         Position - x (mm)   :                -10.5
+G4WT1 >         Position - y (mm)   :                0.304
+G4WT1 >         Position - z (mm)   :                -2.73
+G4WT1 >         Time (ns)           :                0.139
+G4WT1 >         Proper Time (ns)    :                    0
+G4WT1 >         Momentum Direct - x :                0.983
+G4WT1 >         Momentum Direct - y :               0.0204
+G4WT1 >         Momentum Direct - z :               -0.183
+G4WT1 >         Kinetic Energy (MeV):                3e-06
+G4WT1 >         Velocity  (/c):                 2.94
+G4WT1 >         Polarization - x    :               -0.184
+G4WT1 >         Polarization - y    :                0.109
+G4WT1 >         Polarization - z    :               -0.977
+G4WT1 > 
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : TRACK003
+      issued by : G4ParticleChange::CheckIt()
+momentum, energy, and/or time was illegal
+*** Event Must Be Aborted ***
+G4WT1 > G4Track (0x7f9df0cc3530) - track ID = 1, parent ID = 0
+G4WT1 >  Particle type : opticalphoton - creator process : not available
+G4WT1 >  Kinetic energy : 3 eV  - Momentum direction : (0.982861,0.0204087,-0.183213)
+G4WT1 >  Step length : 0 fm  - total energy deposit : 0 eV 
+G4WT1 >  Pre-step point : (-10.5,0.304477,-2.73335) - Physical volume : al_phys (aluminum)
+G4WT1 >  - defined by : Transportation - step status : 1
+G4WT1 >  Post-step point : (-10.5,0.304477,-2.73335) - Physical volume : World (vacuum)
+G4WT1 >  - defined by : Transportation - step status : 1
+G4WT1 >  *** Note: Step information might not be properly updated.
+G4WT1 > 
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+G4WT1 > Thread-local run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 1
+G4WT1 >   User=0.050000s Real=0.048872s Sys=0.010000s [Cpu=122.8%]
+ Run terminated.
+Run Summary
+  Number of events processed : 1
+  User=0.070000s Real=0.069784s Sys=0.010000s [Cpu=114.6%]

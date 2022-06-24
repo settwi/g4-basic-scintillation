@@ -1,0 +1,30 @@
+/run/verbose 1
+/control/verbose 1
+/run/initialize
+
+/vis/open OGL 1280x720-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose 0
+
+# draw & orient volume
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 45. 45.
+/vis/viewer/set/style surface
+
+# draw trajectories & hits
+/vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+
+# color particles
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA gamma 0 1 0 0.5
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA opticalphoton 0.878 0.627 1 0.1
+/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+/vis/modeling/trajectories/drawByParticleID-0/set e+ red
+
+/vis/scene/add/hits
+/vis/scene/endOfEventAction accumulate
+
+# re-enable auto refresh stuff
+/vis/viewer/set/autoRefresh true
+/vis/verbose 1
