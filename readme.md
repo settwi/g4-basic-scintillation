@@ -1,10 +1,14 @@
 ## File output
+
 files output into folder of format 'run#-date-time'
+
 output files per run:
+
 	scint-phots-out.tab -> number of scintillated photons per event
 	si-out.tab -> number of detected scintillated photons per event
 	cryst-out.tab -> energy deposit for event (sum over each hit) or individual hit energies (configurable in Analysis.hh)
 	spec-in.tab -> input energy spectrum
+	
 the files are saved by `class Analysis`.
 
 ## Things that can be configured
