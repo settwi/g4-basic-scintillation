@@ -1,3 +1,8 @@
+## How to run the code
+1. Install Geant4 using [the getting started guide from CERN](https://geant4.web.cern.ch/support/getting_started).
+2. Open a terminal and run `mkdir build && cd build && cmake .. && make`
+3. Run the output executable.
+
 ## File output
 
 files output into folder of format 'run#-date-time'
