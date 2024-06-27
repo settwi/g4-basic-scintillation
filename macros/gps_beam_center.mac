@@ -1,9 +1,9 @@
 /gps/particle gamma
 
-/gps/pos/centre 0 0 2 cm
+/gps/pos/centre 0 2 0 cm
 /gps/pos/type Point
 
-/gps/direction 0 0 -1
+/gps/direction 0 -1 0
 
 /gps/ene/type Mono
 /gps/ene/mono 30 keV

@@ -204,9 +204,11 @@ namespace Materials
 
         // set to one and apply detection in post-processing (?)
         simpt->AddProperty(kOP_DET_EFF, SI_DET_EFF_ENERGIES, SI_DET_EFF, useSpline);
-        std::vector<G4double> refl(SI_BROADCOM_NUMBERS.size(), 0.);
-        simpt->AddProperty(kREFLECTIVITY, SI_DET_EFF_ENERGIES, refl, useSpline);
-        simpt->AddProperty(kTRANSMITTANCE, SI_DET_EFF_ENERGIES, SI_TRANSMITTANCE, useSpline);
+        std::vector<G4double> zeros(SI_DET_EFF_ENERGIES.size(), 0.);
+
+        simpt->AddProperty(kREFLECTIVITY, SI_DET_EFF_ENERGIES, zeros, useSpline);
+        simpt->AddProperty(kTRANSMITTANCE, SI_DET_EFF_ENERGIES, zeros, useSpline);
+
         simpt->AddProperty(kREFR_IDX, SI_REFR_IDX_ENERGY, SI_REFR_IDX_REAL, useSpline);
         simpt->AddProperty(kREFR_IDX_REAL, SI_REFR_IDX_ENERGY, SI_REFR_IDX_REAL, useSpline);
         simpt->AddProperty(kREFR_IDX_IMAG, SI_REFR_IDX_ENERGY, SI_REFR_IDX_IMAG, useSpline);

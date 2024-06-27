@@ -44,26 +44,11 @@ namespace Materials {
 
     // 2022 February 04: refractive index experimentially is about 2.09 for the emisison range, and relatively constant.
     // update to reflect that here.
-    const std::vector<G4double> CEBR3_REFR_IDX_ENERGIES = { 1e-3*eV, 5*eV };
+    const std::vector<G4double> CEBR3_REFR_IDX_ENERGIES = {0.1*eV, 5*eV};
     const std::vector<G4double> CEBR3_REFR_IDXS = { 2.09, 2.09 };
 
-    const std::vector<G4double> CEBR3_ABS_LEN_ENERGIES = {
-        1.00000e+00*eV, 1.18329e+00*eV, 2.06497e+00*eV, 2.38979e+00*eV, 2.71462e+00*eV, 2.94664e+00*eV, 3.17865e+00*eV, 3.68910e+00*eV,
-        4.10673e+00*eV, 4.38515e+00*eV, 4.66357e+00*eV, 4.98840e+00*eV, 5.17401e+00*eV, 5.31323e+00*eV, 5.45244e+00*eV, 5.68445e+00*eV,
-        5.96288e+00*eV, 6.14849e+00*eV, 6.28770e+00*eV, 6.47332e+00*eV, 6.61253e+00*eV, 6.84455e+00*eV, 7.03016e+00*eV, 7.12297e+00*eV,
-        7.30858e+00*eV, 7.49420e+00*eV, 7.58701e+00*eV, 7.67981e+00*eV, 7.77262e+00*eV, 7.86543e+00*eV, 8.00464e+00*eV, 8.05104e+00*eV,
-        8.19026e+00*eV, 8.32947e+00*eV, 8.46868e+00*eV, 8.56148e+00*eV, 8.70070e+00*eV, 8.79350e+00*eV, 8.93271e+00*eV, 9.11833e+00*eV,
-        9.35035e+00*eV, 9.48956e+00*eV, 9.67517e+00*eV, 9.76798e+00*eV, 9.86079e+00*eV, 1.00000e+01*eV, 1.01856e+01*eV, 1.03248e+01*eV,
-        1.04640e+01*eV, 1.06497e+01*eV, 1.08817e+01*eV, 1.12529e+01*eV, 1.14849e+01*eV, 1.16705e+01*eV, 1.19026e+01*eV, 1.22274e+01*eV,
-        1.25986e+01*eV, 1.27378e+01*eV, 1.28770e+01*eV, 1.30626e+01*eV, 1.32019e+01*eV, 1.32947e+01*eV, 1.34339e+01*eV, 1.35731e+01*eV,
-        1.38051e+01*eV, 1.40139e+01*eV, 1.42691e+01*eV, 1.45940e+01*eV, 1.47332e+01*eV, 1.49188e+01*eV, 1.51972e+01*eV, 1.53364e+01*eV,
-        1.54756e+01*eV, 1.56613e+01*eV, 1.58005e+01*eV, 1.60325e+01*eV, 1.62181e+01*eV, 1.64037e+01*eV, 1.65893e+01*eV, 1.68213e+01*eV,
-        1.69606e+01*eV, 1.71694e+01*eV, 1.74710e+01*eV, 1.77494e+01*eV, 1.83063e+01*eV, 1.86311e+01*eV, 1.90487e+01*eV, 1.92343e+01*eV,
-        1.94664e+01*eV, 1.97912e+01*eV, 2.01856e+01*eV, 2.03480e+01*eV, 2.05336e+01*eV, 2.06729e+01*eV, 2.08121e+01*eV, 2.09977e+01*eV,
-        2.10441e+01*eV, 2.11833e+01*eV, 2.13689e+01*eV, 2.16009e+01*eV, 2.17865e+01*eV, 2.20650e+01*eV, 2.22970e+01*eV, 2.24362e+01*eV,
-        2.25290e+01*eV, 2.26682e+01*eV, 2.28074e+01*eV
-    };
+    const std::vector<G4double> CEBR3_ABS_LEN_ENERGIES = {0.1*eV, 5*eV};
 
-    // absorption lengths are super long so just make them 1 km
-    const std::vector<G4double> CEBR3_ABS_LEN(CEBR3_ABS_LEN_ENERGIES.size(), 1. * km);
+    // Typical absorption length for an inorganic scintillator
+    const std::vector<G4double> CEBR3_ABS_LEN(CEBR3_ABS_LEN_ENERGIES.size(), 20. * cm);
 }
